@@ -8,7 +8,7 @@ use DesignPattern\Strategy\Implementations\TestJavascript as TestJavascript;
 
 class DeveloperJavascript extends Developer{
 	
-	function __construct(){
+	public function __construct(){
 		$this->codeInterface = new CodeJavascript();
 		$this->debugInterface = new DebugJavascript();
 		$this->testInterface = new TestJavascript();

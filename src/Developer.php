@@ -6,9 +6,9 @@ use DesignPattern\Strategy\Interfaces\DebugInterface as DebugInterface;
 use DesignPattern\Strategy\Interfaces\TestInterface as TestInterface;
 
 abstract class Developer{
-	protected CodeInterface $codeInterface;
-	protected DebugInterface $debugInterface;
-	protected TestInterface $testInterface;
+	protected $codeInterface;
+	protected $debugInterface;
+	protected $testInterface;
 
 	public function executeCode(){
 		$this->codeInterface->code();

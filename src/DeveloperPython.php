@@ -8,7 +8,7 @@ use DesignPattern\Strategy\Implementations\TestPython as TestPython;
 
 class DeveloperPython extends Developer{
 	
-	function __construct(){
+	public function __construct(){
 		$this->codeInterface = new CodePython();
 		$this->debugInterface = new DebugPython();
 		$this->testInterface = new TestPython();
